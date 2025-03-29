@@ -26,8 +26,8 @@ export async function sendRsvp(formData: FormData): Promise<RsvpResponse> {
   try {
     // Enviar email a los novios
     await resend.emails.send({
-      from: "Invitación de Boda <onboarding@resend.dev>",
-      to: ["figmadevdesign@gmail.com"],
+      from: "Invitación de Boda",
+      to: ["josecalvano1546@gmail.com", "gcalvano45@gmail.com"],
       subject: `Confirmación de asistencia: ${name}`,
       html: `
         <h1>Nueva confirmación de asistencia</h1>
@@ -40,7 +40,8 @@ export async function sendRsvp(formData: FormData): Promise<RsvpResponse> {
     })
 
     // Enviar confirmación al invitado (si se proporciona un email)
-    // Como ya no tenemos email, esta parte se podría omitir o adaptar para enviar un SMS
+    // Como ya no tenemos email, esta parte se podría omitir o adaptar para enviar un SMS 
+    
 
     return { success: true }
   } catch (error) {

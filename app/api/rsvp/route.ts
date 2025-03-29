@@ -14,8 +14,8 @@ export async function POST(request: NextRequest) {
 
     // Enviar email a los novios
     await resend.emails.send({
-      from: `Invitación de Boda <onboarding@resend.dev>`,
-      to: ["figmadevdesign@gmail.com"],
+      from: `Invitación de Boda`,
+      to: ["josecalvano1546@gmail.com", "gcalvano45@gmail.com"],
       subject: `Confirmación de asistencia: ${name}`,
       html: `
         <h1>Nueva confirmación de asistencia</h1>
