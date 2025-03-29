@@ -32,7 +32,7 @@ export function DownloadCard() {
       <h2 className="section-title fade-in">INVITACIÓN</h2>
 
       <div className="flex flex-col items-center fade-in-up">
-        <div ref={cardRef} className="download-card mb-8 relative">
+        <div ref={cardRef} className="download-card mb-8 relative h-[600px]">
           {/* Fondo con textura sutil */}
           <div className="absolute inset-0 bg-white"></div>
 

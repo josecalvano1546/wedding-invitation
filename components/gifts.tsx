@@ -30,8 +30,11 @@ export function Gifts() {
 
         {showBankDetails && (
           <div className="mt-8 p-6 bg-neutral-50 rounded-md border border-neutral-200 transition-all duration-300">
-            <p className="font-serif text-lg">CBU: 0000000000000000000000</p>
-            <p className="text-sm text-neutral-500 mt-2 font-serif">Alias: BODA.GRACIELA.CARLOS</p>
+            <p className="font-serif text-lg">CBU: 0940099366000980890020</p>
+            <p className="text-sm text-neutral-500 mt-2 font-serif">Alias: graciela.calvano</p>
+            <br />
+            <p className="font-serif text-lg">CBU: 0940099366000150590022</p>
+            <p className="text-sm text-neutral-500 mt-2 font-serif">Alias: carlito.gaspa</p>
           </div>
         )}
       </div>
