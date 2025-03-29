@@ -26,7 +26,7 @@ export async function sendRsvp(formData: FormData): Promise<RsvpResponse> {
   try {
     // Enviar email a los novios
     await resend.emails.send({
-      from: "Invitación de Boda",
+      from: "Boda <no-reply@gracielacarlos.site>",
       to: ["josecalvano1546@gmail.com", "gcalvano45@gmail.com"],
       subject: `Confirmación de asistencia: ${name}`,
       html: `
@@ -46,9 +46,10 @@ export async function sendRsvp(formData: FormData): Promise<RsvpResponse> {
     return { success: true }
   } catch (error) {
     console.error("Error sending email:", error)
+    const errorMessage = error instanceof Error ? error.message : 'Error desconocido'
     return {
       success: false,
-      error: "Hubo un error al enviar tu confirmación. Por favor, intenta nuevamente.",
+      error: `Hubo un error al enviar tu confirmación: ${errorMessage}. Por favor, intenta nuevamente.`,
     }
   }
 }
