@@ -6,7 +6,7 @@ export function Hero() {
       <div className="max-w-3xl mx-auto z-10 fade-in">
         <div className="flex items-center justify-center mb-8">
           <div className="w-16 h-px bg-gold"></div>
-          <h1 className="text-4xl md:text-5xl font-tangerine text-gold mx-4 tracking-wide">G & C</h1>
+          <h1 className="text-4xl md:text-5xl font-tangerine text-gold mx-4 tracking-wide">G <span className="text-gold text-2xl font-tangerine">&</span> C</h1>
           <div className="w-16 h-px bg-gold"></div>
         </div>
 

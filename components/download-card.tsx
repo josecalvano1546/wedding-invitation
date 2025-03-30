@@ -46,7 +46,7 @@ export function DownloadCard() {
               {/* Monograma elegante */}
               <div className="mb-6 flex items-center justify-center">
                 <div className="w-8 h-px bg-gold opacity-50"></div>
-                <span className="font-tangerine text-6xl text-gold mx-4">G & C</span>
+                <span className=" font-tangerine text-6xl text-gold mx-4">G <span className="text-gold text-2xl font-tangerine">&</span> C</span>
                 <div className="w-8 h-px bg-gold opacity-50"></div>
               </div>
 
